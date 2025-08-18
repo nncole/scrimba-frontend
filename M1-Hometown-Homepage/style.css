@@ -1,11 +1,63 @@
+:root {
+  /* from provided color palette */
+  --light: #F1FAEE;
+  --aqua: #A8DADC;
+  --light-blue: #457B9D;
+  --dark-blue: #1D3557;
+}
+
 body {
   margin: 0;
+  font-family: "Arial", sans-serif;
+  text-align: center;
 }
+
+/* HERO SECTION */
+
+#hero-section {
+  width: 100%;
+  height: 75vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: url("images/torshov.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  color: var(--light);
+}
+
+#hero-section h1, #hero-section h2 {
+  width: fit-content;
+  min-width: 350px;
+  margin: 15px 0;
+  padding: 10px 20px;
+
+  align-self: center;
+  border-radius: 15px;
+}
+
+#hero-section h1 {
+  background-color: var(--dark-blue);
+  font-size: 3.5rem;
+}
+
+#hero-section h2 {
+  max-width: 60%;
+  background-color: var(--light-blue);
+  font-size: 1.8rem;
+}
+
+/* ACTIVITIES SECTION */
 
 .activity-img {
   width: 200px;
   height: 200px;
 }
+
+/* GUIDE SECTION */
 
 #guide-img {
   height: 300px;
