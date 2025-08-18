@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+.activity-img {
+  width: 200px;
+  height: 200px;
+}
+
+#guide-img {
+  height: 300px;
+}
