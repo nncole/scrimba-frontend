@@ -94,6 +94,45 @@ body {
 
 /* GUIDE SECTION */
 
+#guide-section {
+  height: 50vh;
+  min-height: 400px;
+
+  display: flex;
+  align-items: center;
+}
+
+#guide-card {
+  width: 550px;
+  margin: 0 auto;
+  padding: 25px;
+
+  display: flex;
+  gap: 25px;
+
+  color: var(--dark-blue);
+  background-color: var(--aqua);
+  border-radius: 15px;
+  box-shadow: 0 8px 0 var(--dark-blue);
+}
+
+#guide-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#guide-info h3 {
+  margin: 10px 0;
+  font-size: 1.9rem;
+}
+
+#guide-info p, #guide-info h4 {
+  margin: 15px 0;
+  font-size: 1.3rem;
+}
+
 #guide-img {
   height: 300px;
+  border-radius: 15px;
 }
