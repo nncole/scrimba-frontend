@@ -1,15 +1,17 @@
 :root {
-  /* from provided color palette */
-  --light: #F1FAEE;
-  --aqua: #A8DADC;
-  --light-blue: #457B9D;
-  --dark-blue: #1D3557;
+  --white: #FFFFFF;
+  --light: #E5DDCA;
+  --light-green: #4A4C29;
+  --dark-green: #2D2B0E;
 }
 
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Habibi", serif;
   text-align: center;
+  
+  background-color: var(--light-green);
+  cursor: default;
 }
 
 /* HERO SECTION */
@@ -22,11 +24,12 @@ body {
   flex-direction: column;
   justify-content: center;
 
-  background-image: url("images/torshov.jpg");
+  background-image: url("images/hero.jpg");
   background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
 
-  color: var(--light);
+  color: var(--white);
 }
 
 #hero-section h1, #hero-section h2 {
@@ -40,13 +43,13 @@ body {
 }
 
 #hero-section h1 {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-green);
   font-size: 3.5rem;
 }
 
 #hero-section h2 {
   max-width: 60%;
-  background-color: var(--light-blue);
+  background-color: var(--light-green);
   font-size: 1.8rem;
 }
 
@@ -56,12 +59,12 @@ body {
   height: auto;
   padding: 50px 0;
 
-  color: var(--dark-blue);
+  color: var(--light-green);
   background-color: var(--light);
 }
 
 #activities-section h3 {
-  margin: 20px 0 75px;
+  margin: 20px 0 50px;
   font-size: 2.5rem;
 }
 
@@ -72,8 +75,8 @@ body {
 }
 
 .activity-card {
-  width: 250px;
-  padding: 0 25px;
+  width: 350px;
+  padding: 25px;
 }
 
 .activity-card h4 {
@@ -90,6 +93,7 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 /* GUIDE SECTION */
@@ -110,10 +114,10 @@ body {
   display: flex;
   gap: 25px;
 
-  color: var(--dark-blue);
-  background-color: var(--aqua);
+  color: var(--light-green);
+  background-color: var(--light);
   border-radius: 15px;
-  box-shadow: 0 8px 0 var(--dark-blue);
+  box-shadow: 0 8px 0 var(--dark-green);
 }
 
 #guide-info {
@@ -143,7 +147,7 @@ footer {
   height: 5vh;
   text-align: center;
 
-  color: var(--light-blue);
+  color: var(--light);
   font-size: 0.85rem;
   font-family: sans-serif;
 }
@@ -151,6 +155,19 @@ footer {
 footer a {
   color: inherit;
   text-decoration: none;
+}
+
+/* HOVER EFFECTS */
+
+.activity-card:hover {
+  box-shadow: 3px 5px 10px var(--dark-green);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#guide-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 footer a:hover {
