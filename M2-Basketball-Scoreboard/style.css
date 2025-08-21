@@ -1,5 +1,6 @@
 :root {
   --dark-purple: #1B244A;
+  --darker-purple: #10142C;
   --light-purple: #9AABD8;
   --black: #080001;
   --red: #F94F6D;
@@ -84,4 +85,13 @@ body {
   
   font-family: 'Cursed Timer', sans-serif;
   font-size: 2rem;
+}
+
+/* HOVER EFFECTS */
+
+.point-btn:hover {
+  color: var(--dark-purple);
+  background-color: var(--light-purple);
+  border-color: var(--darker-purple);
+  cursor: pointer;
 }
