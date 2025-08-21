@@ -115,3 +115,27 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .teams {
+    width: 100%;
+    height: unset;
+
+    flex-direction: column;
+  }
+
+  #home, #guest {
+    width: 100%;
+    padding: 35px 0;
+  }
+
+  footer {
+    margin: 50px 0 10px;
+  }
+}
