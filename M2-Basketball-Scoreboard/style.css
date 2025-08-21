@@ -1,0 +1,87 @@
+:root {
+  --dark-purple: #1B244A;
+  --light-purple: #9AABD8;
+  --black: #080001;
+  --red: #F94F6D;
+  --white: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Cursed Timer";
+  src: url("fonts/Cursed_Timer.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark-purple);
+  font-family: "Verdana", sans-serif;
+  cursor: default;
+}
+
+/* TEAM CONTAINER */
+
+.teams {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+#home, 
+#guest {
+  width: 50%;
+  text-align: center;
+}
+
+.team-heading {
+  margin: 0;
+
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 4.8rem;
+}
+
+.team-score {
+  width: 80%;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--red);
+  background-color: var(--black);
+  border-radius: 10px;
+
+  font-family: "Cursed Timer", sans-serif;
+  font-size: 9rem;
+}
+
+/* POINT SYSTEM */
+
+.point-system {
+  width: 80%;
+  max-width: 300px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.point-btn {
+  width: 85px;
+  height: 80px;
+
+  color: var(--light-purple);
+  background-color: var(--dark-purple);
+  border: 4px solid var(--light-purple);
+  border-radius: 10px;
+  
+  font-family: 'Cursed Timer', sans-serif;
+  font-size: 2rem;
+}
