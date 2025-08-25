@@ -13,6 +13,20 @@ function updateScore(team, points) {
     guestPoints += points;
     guestScore.textContent = guestPoints;
   }
+  highlightLeading()
+}
+
+function highlightLeading(){
+  if (homePoints > guestPoints) {
+    homeScore.classList.add("leading")
+    guestScore.classList.remove("leading")
+  } else if (guestPoints > homePoints) {
+    guestScore.classList.add("leading")
+    homeScore.classList.remove("leading")
+  } else {
+    homeScore.classList.remove("leading")
+    guestScore.classList.remove("leading")
+  }
 }
 
 function resetGame(){

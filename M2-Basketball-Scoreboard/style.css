@@ -35,9 +35,9 @@ body {
   margin: 35px 50px;
   padding: 15px;
 
-  color: #9AABD8;
-  background-color: #1B244A;
-  border: 4px solid #9AABD8;
+  color: var(--light-purple);
+  background-color: var(--dark-purple);
+  border: 4px solid var(--light-purple);
   border-radius: 10px;
   font-size: 1.25rem;
 }
@@ -110,13 +110,19 @@ body {
   font-size: 2rem;
 }
 
+/* HIGHLIGHT LEADING TEAM */
+
+.leading {
+  box-shadow: 0 0 25px var(--red);
+}
+
 /* FOOTER */
 
 footer {
   height: 5vh;
   text-align: center;
 
-  color: #9AABD8;
+  color: var(--light-purple);
   font-size: 0.85rem;
   font-family: sans-serif;
 }
