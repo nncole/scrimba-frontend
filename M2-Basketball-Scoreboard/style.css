@@ -19,11 +19,34 @@ body {
   cursor: default;
 }
 
+/* RESET GAME */
+
+#reset-game {
+  height: 15vh;
+
+  display: flex;
+  justify-content: end;
+}
+
+#reset-btn {
+  width: 160px;
+  height: fit-content;
+
+  margin: 35px 50px;
+  padding: 15px;
+
+  color: #9AABD8;
+  background-color: #1B244A;
+  border: 4px solid #9AABD8;
+  border-radius: 10px;
+  font-size: 1.25rem;
+}
+
 /* TEAM CONTAINER */
 
 .teams {
   width: 80%;
-  height: 95vh;
+  height: 80vh;
   margin: auto;
 
   display: flex;
@@ -105,7 +128,8 @@ footer a {
 
 /* HOVER EFFECTS */
 
-.point-btn:hover {
+.point-btn:hover,
+#reset-btn:hover {
   color: var(--dark-purple);
   background-color: var(--light-purple);
   border-color: var(--darker-purple);
@@ -121,6 +145,16 @@ footer a:hover {
 @media (max-width: 768px) {
   body {
     width: 100%;
+  }
+
+  #reset-game {
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #reset-btn {
+    margin: 35px 0 0;
   }
 
   .teams {
