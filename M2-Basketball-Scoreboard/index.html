@@ -16,24 +16,24 @@
       <!-- Home Team -->
       <div id="home">
         <h3 class="team-heading">Home</h3>
-        <div class="team-score">0</div>
+        <div class="team-score" id="home-score">0</div>
 
         <div class="point-system">
-          <button class="point-btn">+1</button>
-          <button class="point-btn">+2</button>
-          <button class="point-btn">+3</button>
+          <button class="point-btn" onclick="updateScore('home', 1)">+1</button>
+          <button class="point-btn" onclick="updateScore('home', 2)">+2</button>
+          <button class="point-btn" onclick="updateScore('home', 3)">+3</button>
         </div>
       </div>
 
       <!-- Guest Team -->
       <div id="guest">
         <h3 class="team-heading">Guest</h3>
-        <div class="team-score">0</div>
+        <div class="team-score" id="guest-score">0</div>
 
         <div class="point-system">
-          <button class="point-btn">+1</button>
-          <button class="point-btn">+2</button>
-          <button class="point-btn">+3</button>
+          <button class="point-btn" onclick="updateScore('guest', 1)">+1</button>
+          <button class="point-btn" onclick="updateScore('guest', 2)">+2</button>
+          <button class="point-btn" onclick="updateScore('guest', 3)">+3</button>
         </div>
       </div>
 
@@ -44,5 +44,7 @@
       &copy; 2025 <a href="https://github.com/nncole" target="_blank">Nicole S.</a>
     </footer>
     
+    <!-- JS -->
+    <script src="script.js"></script>
   </body>
 </html>
