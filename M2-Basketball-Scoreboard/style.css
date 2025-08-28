@@ -1,56 +1,62 @@
 :root {
-  --dark-purple: #1B244A;
-  --darker-purple: #10142C;
-  --light-purple: #9AABD8;
-  --black: #080001;
-  --red: #F94F6D;
-  --white: #FFFFFF;
+  --orange: #EA7519;
+  --dark-orange: #974b11;
+  --black: #1C1E21;
+  --white: #F8EBD8;
 }
 
 @font-face {
-  font-family: "Cursed Timer";
-  src: url("fonts/Cursed_Timer.ttf") format("truetype");
+  font-family: "Dimitri";
+  src: url("fonts/DIMITRI.TTF") format("truetype");
 }
 
 body {
   margin: 0;
-  background-color: var(--dark-purple);
-  font-family: "Verdana", sans-serif;
+  background-image: url("images/haikyuu-bg.jpg");
+  background-size: cover;
+  font-family: "Dimitri", serif;
   cursor: default;
 }
 
 /* RESET GAME */
 
 #reset-game {
-  height: 15vh;
+  height: 12vh;
+  width: 60%;
+  margin: auto;
 
   display: flex;
   justify-content: end;
+  align-items: center;
 }
 
 #reset-btn {
   width: 160px;
   height: fit-content;
-
-  margin: 35px 50px;
   padding: 15px;
 
-  color: var(--light-purple);
-  background-color: var(--dark-purple);
-  border: 4px solid var(--light-purple);
+  color: var(--white);
+  background-color: var(--black);
+  border: 4px solid var(--orange);
   border-radius: 10px;
+
   font-size: 1.25rem;
+  font-family: "Dimitri", serif;
 }
 
 /* TEAM CONTAINER */
 
 .teams {
-  width: 80%;
+  width: 60%;
   height: 80vh;
   margin: auto;
 
   display: flex;
   align-items: center;
+
+  background-color: var(--black);
+  border: 10px solid var(--orange);
+  border-radius: 20px;
 }
 
 #home, 
@@ -62,34 +68,54 @@ body {
 .team-heading {
   margin: 0;
 
-  text-transform: uppercase;
   color: var(--white);
   font-size: 4.8rem;
 }
 
-.team-score {
+.score-wrapper {
   width: 80%;
-  max-width: 300px;
-  height: 250px;
-  margin: 50px auto;
+  max-width: 400px;
+  height: fit-content;
+  max-height: 400px;
+  margin: 20px auto 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: var(--orange);
+  border-radius: 15px;
+}
+
+.emblem {
+  width: 200px;
+  margin-top: 20px;
+
+  fill: var(--black);
+}
+
+.team-score {
+  width: 85%;
+  height: 280px;
+  margin: 20px 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  color: var(--red);
+  color: var(--white);
   background-color: var(--black);
   border-radius: 10px;
 
-  font-family: "Cursed Timer", sans-serif;
-  font-size: 9rem;
+  font-size: 8rem;
 }
 
 /* POINT SYSTEM */
 
 .point-system {
   width: 80%;
-  max-width: 300px;
+  max-width: 400px;
   margin: auto;
 
   display: flex;
@@ -98,31 +124,43 @@ body {
 }
 
 .point-btn {
-  width: 85px;
-  height: 80px;
+  width: 125px;
+  height: 95px;
 
-  color: var(--light-purple);
-  background-color: var(--dark-purple);
-  border: 4px solid var(--light-purple);
+  color: var(--white);
+  background-color: var(--orange);
+  border: 4px solid var(--orange);
   border-radius: 10px;
   
-  font-family: 'Cursed Timer', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+.point-icon {
+  width: 75px;
+  vertical-align: middle;
+}
+
+.serving {
+  width: calc(100% - 125px);
+  border: 4px solid var(--orange);
+  border-radius: 10px;
 }
 
 /* HIGHLIGHT LEADING TEAM */
 
 .leading {
-  box-shadow: 0 0 25px var(--red);
+  box-shadow: 0 0 25px var(--black);
+  text-decoration: underline;
 }
 
 /* FOOTER */
 
 footer {
-  height: 5vh;
-  text-align: center;
+  height: fit-content;
+  padding: 20px 0 10px;
 
-  color: var(--light-purple);
+  text-align: center;
+  color: var(--white);
   font-size: 0.85rem;
   font-family: sans-serif;
 }
@@ -134,11 +172,14 @@ footer a {
 
 /* HOVER EFFECTS */
 
-.point-btn:hover,
+.point-btn:hover {
+  color: var(--black);
+  border-color: var(--dark-orange);
+  cursor: pointer;
+}
+
 #reset-btn:hover {
-  color: var(--dark-purple);
-  background-color: var(--light-purple);
-  border-color: var(--darker-purple);
+  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -155,6 +196,8 @@ footer a:hover {
 
   #reset-game {
     height: fit-content;
+    margin-bottom: 20px;
+
     justify-content: center;
     align-items: center;
   }
