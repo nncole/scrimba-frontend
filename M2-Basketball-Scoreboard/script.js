@@ -35,4 +35,7 @@ function resetGame(){
 
   homeScore.textContent = 0;
   guestScore.textContent = 0;
+
+  homeScore.classList.remove("leading")
+  guestScore.classList.remove("leading")
 }
