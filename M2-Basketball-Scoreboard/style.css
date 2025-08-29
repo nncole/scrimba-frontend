@@ -7,12 +7,12 @@
 
 @font-face {
   font-family: "Dimitri";
-  src: url("fonts/DIMITRI.TTF") format("truetype");
+  src: url("assets/fonts/DIMITRI.TTF") format("truetype");
 }
 
 body {
   margin: 0;
-  background-image: url("images/haikyuu-bg.jpg");
+  background-image: url("assets/images/haikyuu-bg.jpg");
   background-size: cover;
   font-family: "Dimitri", serif;
   cursor: default;
