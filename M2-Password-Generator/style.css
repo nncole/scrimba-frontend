@@ -72,5 +72,33 @@ header > p {
   width: 100%;
   height: 1px;
   margin: 50px 0;
+  
   background-color: var(--secondary-bg);
+}
+
+/* PASSWORDS SECTION */
+
+#generated-passwords {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+
+  visibility: hidden;
+}
+
+.password {
+  min-width: 45%;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  color: var(--accent-color);
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  font-size: 1.2rem;
 }
