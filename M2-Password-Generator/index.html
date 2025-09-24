@@ -15,8 +15,18 @@
       <header>
         <h1>Generate a <span class="highlight">random password</span></h1>
         <p>Never use an insecure password again.</p>
-        <button id="generate-btn">Generate passwords</button>
       </header>
+
+      <!-- CUSTOMIZATION SECTION -->
+      <section id="customize-password">
+        <div class="option">
+          <label for="password-length">Password length:</label>
+          <input type="range" min="8" max="24" value="12" id="password-length">
+          <span id="slider-value">12</span>
+        </div>
+
+        <button id="generate-btn">Generate passwords</button>
+      </section>
 
       <div id="divider"></div>
 

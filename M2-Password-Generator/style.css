@@ -57,9 +57,68 @@ header > p {
   font-size: 1.7rem;
 }
 
+/* CUSTOMIZATION SECTION */
+
+.option {
+  height: 3em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+label {
+  font-weight: 600;
+  flex: 1;
+}
+
+#password-length {
+  width: 40%;
+  height: 8px;
+  
+  appearance: none;
+  background-color: var(--secondary-bg);
+  border-radius: 25px;
+}
+
+#password-length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 50%;
+  
+  cursor: pointer;
+}
+
+#password-length::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 50%;
+  
+  cursor: pointer;
+}
+
+#slider-value {
+  min-width: 28px;
+  text-align: right;
+}
+
 #generate-btn {
   margin: 50px 0 0;
   padding: 16px 32px;
+  align-self: flex-start;
 
   color: var(--font-white);
   background-color: var(--accent-color);
