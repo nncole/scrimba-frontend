@@ -1,6 +1,7 @@
 const passwordLength = document.querySelector("#password-length");
 const sliderValue = document.querySelector("#slider-value");
 const includeNumbers = document.querySelector("#include-numbers");
+const includeSymbols = document.querySelector("#include-symbols");
 const generateBtn = document.querySelector("#generate-btn");
 const passwordsContainer = document.querySelector("#generated-passwords");
 const generatedPassword = document.querySelectorAll(".password")
@@ -16,6 +17,10 @@ function getCharacters() {
 
   if (includeNumbers.checked) {
     availableCharacters.push(...numbers)
+  }
+
+  if (includeSymbols.checked) {
+    availableCharacters.push(...symbols);
   }
   return availableCharacters;
 }
