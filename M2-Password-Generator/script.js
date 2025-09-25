@@ -54,5 +54,18 @@ generateBtn.addEventListener("click", function(){
 
   for (const password of generatedPassword) {
     password.textContent = generatePassword(length);
+    const newPassword = password.textContent;
+
+    password.addEventListener("click", function(){
+      navigator.clipboard.writeText(newPassword);
+
+      password.classList.add("copied");
+      password.textContent = "Password copied!";
+
+      setTimeout(() => {
+        password.classList.remove("copied")
+        password.textContent = newPassword;
+      }, 1000);
+    })
   }
 })
