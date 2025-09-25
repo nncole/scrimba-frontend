@@ -20,19 +20,25 @@
       <!-- CUSTOMIZATION SECTION -->
       <section id="customize-password">
         <div class="option">
-          <label for="password-length">Password length:</label>
+          <label for="password-length">Set password length:</label>
           <input type="range" min="8" max="24" value="12" id="password-length">
           <span id="slider-value">12</span>
         </div>
 
         <div class="option">
           <label for="include-numbers">Include numbers:</label>
-          <input type="checkbox" id="include-numbers">
+          <label class="toggle">
+            <input type="checkbox" class="toggled"  id="include-numbers">
+            <span class="switch"></span>
+          </label>
         </div>
 
         <div class="option">
           <label for="include-symbols">Include symbols:</label>
-          <input type="checkbox" id="include-symbols">
+          <label class="toggle">
+            <input type="checkbox" class="toggled" id="include-symbols">
+            <span class="switch"></span>
+          </label>
         </div>
 
         <button id="generate-btn">Generate passwords</button>
