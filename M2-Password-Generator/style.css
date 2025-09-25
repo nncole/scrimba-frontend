@@ -32,13 +32,13 @@ body {
 
 main {
   width: 100%;
-  max-width: 550px;
+  max-width: 700px;
 }
 
 /* HEADER */
 
 header > h1 {
-  margin: 50px 0 20px;
+  margin: 30px 0 20px;
   color: var(--font-white);
 
   font-family: "Karla", sans-serif;
@@ -57,9 +57,133 @@ header > p {
   font-size: 1.7rem;
 }
 
+/* CUSTOMIZATION SECTION */
+
+/* container */
+
+.option {
+  height: 3em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.option label {
+  font-weight: 600;
+}
+
+.option label[for="password-length"] {
+  flex: 1;
+}
+
+/* password length slider */
+
+#password-length {
+  width: 40%;
+  height: 8px;
+  
+  appearance: none;
+  background-color: var(--secondary-bg);
+  border-radius: 25px;
+}
+
+#password-length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 50%;
+  
+  cursor: pointer;
+}
+
+#password-length::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 50%;
+  
+  cursor: pointer;
+}
+
+#slider-value {
+  min-width: 28px;
+  text-align: right;
+}
+
+/* toggle switch */
+
+.toggle {
+  width: 50px;
+  height: 30px;
+
+  position: relative;
+  display: inline-block;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  height: 30px;
+  width: 50px;
+  margin-left: auto;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--secondary-bg);
+  border-radius: 50px;
+  transition: .5s;
+
+  cursor: pointer;
+}
+
+.switch::before {
+  height: 20px;
+  width: 20px;
+
+  position: absolute;
+  content: "";
+  left: 5px;
+  bottom: 5px;
+
+  background-color: var(--font-white);
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.toggled:checked + .switch {
+  background-color: var(--accent-color);
+}
+
+.toggled:checked + .switch::before {
+  transform: translateX(21px);
+}
+
+/* generate password button */
+
 #generate-btn {
-  margin: 50px 0 0;
+  margin: 30px 0 0;
   padding: 16px 32px;
+  align-self: flex-start;
 
   color: var(--font-white);
   background-color: var(--accent-color);
@@ -103,6 +227,15 @@ header > p {
   background-color: var(--secondary-bg);
   border-radius: 10px;
   font-size: 1.2rem;
+  transition: color .5s ease-in;
+
+  cursor: pointer;
+}
+
+.copied {
+  color: var(--main-bg);
+  background-color: var(--accent-color);
+  
 }
 
 /* FOOTER */
@@ -110,7 +243,7 @@ header > p {
 footer {
   width: 100%;
   width: 550px;
-  margin-top: 7rem;
+  margin-top: 4rem;
 
   color: var(--accent-color);
   font-size: 0.85rem;
@@ -121,4 +254,8 @@ footer {
 footer a {
   color: inherit;
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
