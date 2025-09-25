@@ -1,8 +1,15 @@
+// setting password length
 const passwordLength = document.querySelector("#password-length");
 const sliderValue = document.querySelector("#slider-value");
+
+// toggle to include numbers and/or symbols to generated password
 const includeNumbers = document.querySelector("#include-numbers");
 const includeSymbols = document.querySelector("#include-symbols");
+
+// button to generate passwords
 const generateBtn = document.querySelector("#generate-btn");
+
+// passwords container
 const passwordsContainer = document.querySelector("#generated-passwords");
 const generatedPassword = document.querySelectorAll(".password")
 
@@ -28,7 +35,6 @@ function getCharacters() {
 passwordLength.addEventListener("input", function(){
   sliderValue.textContent = passwordLength.value;
 })
-
 
 function generatePassword(length) {
   let option = "";
