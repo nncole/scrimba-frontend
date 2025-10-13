@@ -75,6 +75,13 @@ header h1 {
   border-radius: 8px;
 
   font-size: 1.2rem;
+
+  cursor: pointer;
+}
+
+#convert-btn:hover {
+  transition: 0.3s ease;
+  background-color: var(--muted-white);
 }
 
 /* MAIN CONTENT */
