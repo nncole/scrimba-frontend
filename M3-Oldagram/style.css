@@ -39,3 +39,22 @@ body {
 .og-icon {
   height: 35px;
 }
+
+/* HEADER */
+
+#nav {
+  width: 100%;
+  height: fit-content;
+  padding: 8px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 2px solid var(--border);
+}
+
+#oldagram-logo,
+#user-avatar {
+  margin: 0 40px;
+}
