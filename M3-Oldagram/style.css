@@ -116,6 +116,12 @@ main {
   font-weight: bold;
 }
 
+/* HOVER EFFECTS */
+
 img:hover {
   cursor: pointer;
+}
+
+.og-icon:hover {
+  opacity: 0.5;
 }
