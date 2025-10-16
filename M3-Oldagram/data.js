@@ -1,0 +1,32 @@
+export const posts = [
+  {
+    id: 1,
+    avatar: "images/avatar-vangogh.jpg",
+    name: "Vincent van Gogh",
+    location: "Zudert, Netherlands",
+    uploadedPic: "images/post-vangogh.jpg",
+    likes: 21492,
+    username: "vincey1853",
+    comment: "just took a few mushrooms lol",
+  },
+  {
+    id: 2,
+    avatar: "images/avatar-courbet.jpg",
+    name: "Gustave Courbet",
+    location: "Ornans, France",
+    uploadedPic: "images/post-courbet.jpg",
+    likes: 12502,
+    username: "gus1819",
+    comment: "i'm feelin a bit stressed tbh",
+  },
+  {
+    id: 3,
+    avatar: "images/avatar-ducreux.jpg",
+    name: "Joseph Ducreux",
+    location: "Paris, France",
+    uploadedPic: "images/post-ducreux.jpg",
+    likes: 15137,
+    username: "jd1735",
+    comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
+  },
+]; 
