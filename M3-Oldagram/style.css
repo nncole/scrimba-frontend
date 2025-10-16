@@ -34,10 +34,12 @@ body {
 
 .uploaded-pic {
   width: 100%;
+  padding: 15px 0;
 }
 
 .og-icon {
   height: 35px;
+  padding: 5px 0 10px;
 }
 
 /* HEADER */
@@ -51,10 +53,69 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  border-bottom: 2px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 #oldagram-logo,
 #user-avatar {
   margin: 0 40px;
+}
+
+/* MAIN CONTENT */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--font-color);
+  background-color: var(--secondary-color);
+}
+
+.post {
+  width: 100%;
+  max-width: 650px;
+  padding: 15px 0;
+
+  background-color: var(--main-color);
+}
+
+.post:not(:last-child) {
+  border-bottom: 35px solid var(--secondary-color);
+}
+
+.author, 
+.icons {
+  padding: 0 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons {
+  gap: 15px;
+}
+
+.likes, 
+.comments {
+  padding: 5px 15px;
+}
+
+.author p, 
+.likes p, 
+.comments p {
+  margin: 0;
+}
+
+.author p {
+  line-height: 1.4;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+img:hover {
+  cursor: pointer;
 }
