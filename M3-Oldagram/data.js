@@ -8,6 +8,7 @@ export const posts = [
     likes: 21492,
     username: "vincey1853",
     comment: "just took a few mushrooms lol",
+    isLiked: false,
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const posts = [
     likes: 12502,
     username: "gus1819",
     comment: "i'm feelin a bit stressed tbh",
+    isLiked: false,
   },
   {
     id: 3,
@@ -28,5 +30,6 @@ export const posts = [
     likes: 15137,
     username: "jd1735",
     comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
+    isLiked: false,
   },
 ]; 
