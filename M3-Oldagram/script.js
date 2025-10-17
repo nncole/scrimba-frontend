@@ -23,7 +23,7 @@ function renderPosts() {
       </section>
 
       <section class="icons">
-        <img src="images/icon-heart.png" class="og-icon" data-id="${post.id}">
+        <img src="${post.isLiked ? "images/icon-heart-liked.png" : "images/icon-heart.png"}" class="og-icon" data-id="${post.id}">
         <img src="images/icon-comment.png" class="og-icon">
         <img src="images/icon-dm.png" class="og-icon">
       </section>
