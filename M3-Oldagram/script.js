@@ -23,9 +23,9 @@ function renderPosts() {
       </section>
 
       <section class="icons">
-        <img src="${post.isLiked ? "images/icon-heart-liked.png" : "images/icon-heart.png"}" class="og-icon" data-id="${post.id}">
-        <img src="images/icon-comment.png" class="og-icon">
-        <img src="images/icon-dm.png" class="og-icon">
+        <img src="${post.isLiked ? "assets/images/icon-heart-liked.png" : "assets/images/icon-heart.png"}" class="og-icon" data-id="${post.id}">
+        <img src="assets/images/icon-comment.png" class="og-icon">
+        <img src="assets/images/icon-dm.png" class="og-icon">
       </section>
 
       <section class="likes">
