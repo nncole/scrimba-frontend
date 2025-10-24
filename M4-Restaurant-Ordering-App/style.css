@@ -1,0 +1,48 @@
+:root {
+  --white: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Smythe";
+  src: url("fonts/Smythe.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  background-color: var(--white);
+  
+  cursor: default;
+}
+
+/* HEADER */
+
+header {
+  height: 20vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: url(images/restaurant-header.jpg);
+  background-size: cover;
+  background-position: center;
+
+  color: var(--white);
+  font-family: "Smythe", serif;
+  letter-spacing: 1px;
+}
+
+.brand-name, 
+.tagline {
+  margin: 0;
+  padding: 5px 50px;
+}
+
+.brand-name {
+  font-size: 2.8rem;
+}
+
+.tagline {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
