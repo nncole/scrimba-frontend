@@ -1,5 +1,9 @@
 :root {
   --white: #FFFFFF;
+  --light-gray: #D2D2D2;
+  --dark-gray: #8B8B8B;
+  --add-btn: #3C3C3C;
+  --add-btn-hover: #d4d4d4a1;
 }
 
 @font-face {
@@ -10,6 +14,9 @@
 body {
   margin: 0;
   background-color: var(--white);
+
+  font-family: "Smythe", serif;
+  letter-spacing: 1px;
   
   cursor: default;
 }
@@ -28,8 +35,6 @@ header {
   background-position: center;
 
   color: var(--white);
-  font-family: "Smythe", serif;
-  letter-spacing: 1px;
 }
 
 .brand-name, 
@@ -45,4 +50,81 @@ header {
 .tagline {
   font-size: 1.6rem;
   font-weight: normal;
+}
+
+/* == MENU SECTION == */
+
+main {
+  width: 90%;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+/* MENU ITEM */
+
+.menu-item {
+  padding: 20px 0;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.menu-item * {
+  margin: 0;
+}
+
+/* MENU INFO */
+
+.item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.emoji {
+  font-size: 5rem;
+}
+
+.name {
+  padding-bottom: 3px;
+  font-size: 1.8rem;
+}
+
+.ingredients {
+  font-size: 1rem;
+  color: var(--dark-gray);
+}
+
+.price {
+  padding-top: 12px;
+  font-size: 1.35rem;
+}
+
+/* ADD BUTTON */
+
+.add-btn {
+  width: 45px;
+  height: 45px;
+
+  font-size: 1.65rem;
+  font-family: serif;
+  color: var(--add-btn);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: 1.5px solid var(--light-gray);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: var(--add-btn-hover);
 }
