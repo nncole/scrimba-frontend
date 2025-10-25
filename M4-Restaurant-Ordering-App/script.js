@@ -34,6 +34,9 @@ document.addEventListener("click", (e) => {
   if (e.target.classList.contains("add-btn")) {
     const itemID = Number(e.target.dataset.id);
     addOrder(itemID);
+  } else if (e.target.classList.contains("remove-btn")) {
+    const itemID = Number(e.target.dataset.id);
+    removeOrder(itemID);
   }
 });
 
@@ -46,6 +49,15 @@ function addOrder(itemID) {
   orders.push(item);
   renderOrder();
 };
+
+function removeOrder(itemID) {
+  const index = orders.findIndex(item => item.id === itemID);
+  
+  if (index !== -1) {
+    orders.splice(index, 1);
+    renderOrder();
+  }
+}
 
 // RENDER ORDERS
 
