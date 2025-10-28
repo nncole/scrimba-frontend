@@ -86,9 +86,16 @@ function renderOrder() {
 
     <div class="order-total">
       <h3>Total price:</h3>
-      <div class="price" id="total-price">$0</div>
+      <div class="price" id="total-price">$${getTotalPrice()}</div>
     </div>
 
     <button id="complete-order-btn">Complete order</button>
   `;
 };
+
+// RENDER TOTAL PRICE
+
+function getTotalPrice() {
+  const totalPrice = orders.reduce((sum, item) => sum + item.price, 0);
+  return totalPrice;
+}
