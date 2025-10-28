@@ -128,3 +128,97 @@ main {
 .add-btn:hover {
   background-color: var(--add-btn-hover);
 }
+
+/* == ORDER SECTION == */
+
+#order-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#order-container h2 {
+  margin: 0;
+  padding: 50px 0;
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+.order-item {
+  padding: 5px 0;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.remove-btn {
+  color: var(--dark-gray);
+  background: none;
+  border: none;
+
+  text-align: left;
+  font-size: 0.8rem;
+
+  cursor: pointer;
+}
+
+.order-item .name,
+.order-item .price {
+  margin: 0;
+  padding: 0;
+}
+
+.order-item .price {
+  flex: 1;
+  text-align: right;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+
+  background-color: var(--add-btn);
+}
+
+/* TOTAL PRICE */
+
+.order-total {
+  display: flex;
+  align-items: center;
+}
+
+.order-total h3 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+#total-price {
+  padding: 0;
+
+  flex: 1;
+  text-align: right;
+}
+
+/* ORDER BUTTON */
+
+#complete-order-btn {
+  width: 100%;
+  height: 50px;
+
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: bold;
+
+  color: white;
+  background-color: #16DB99;
+  border: transparent;
+  border-radius: 3px;
+
+  cursor: pointer;
+}
+
+#complete-order-btn {
+  margin: 40px 0 25px;
+}

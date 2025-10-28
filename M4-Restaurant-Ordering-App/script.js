@@ -57,7 +57,7 @@ function removeOrder(itemID) {
     orders.splice(index, 1);
     renderOrder();
   }
-}
+};
 
 // RENDER ORDERS
 
@@ -65,11 +65,13 @@ function renderOrder() {
   orderContainer.innerHTML = `
     <h2>Your Order</h2>
 
-    <div class="order-item">
+    <div id="order-list">
       ${orders.map(item => `
-        <p class="name">${item.name}</p>
-        <button class="remove-btn" data-id="${item.id}">remove</button>
-        <p class="price">$${item.price}</p>
+        <div class="order-item">
+          <p class="name">${item.name}</p>
+          <button class="remove-btn" data-id="${item.id}">remove</button>
+          <p class="price">$${item.price}</p>
+        </div>
       `).join("")}
     </div>
 
