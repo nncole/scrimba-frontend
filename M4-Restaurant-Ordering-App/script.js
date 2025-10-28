@@ -62,6 +62,13 @@ function removeOrder(itemID) {
 // RENDER ORDERS
 
 function renderOrder() {
+  orderContainer.style.display = "none";
+
+  if (orders.length !== 0) {
+    orderContainer.style.display = "block";
+    orderContainer.innerHTML = "";
+  }
+
   orderContainer.innerHTML = `
     <h2>Your Order</h2>
 
