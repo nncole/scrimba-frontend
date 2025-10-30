@@ -4,6 +4,8 @@
   --dark-gray: #8B8B8B;
   --add-btn: #3C3C3C;
   --add-btn-hover: #d4d4d4a1;
+  --alert-bg: #ECFDF5;
+  --alert-font: #065F46;
 }
 
 @font-face {
@@ -282,4 +284,18 @@ input {
   padding: 10px 15px;
   
   font-size: 1rem;
+}
+
+/* ALERT */
+
+.alert {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+
+  color: var(--alert-font);
+  background-color: var(--alert-bg);
+
+  font-size: 1.7rem;
+  text-align: center;
 }
