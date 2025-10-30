@@ -40,6 +40,9 @@ document.addEventListener("click", (e) => {
     removeOrder(itemID);
   } else if (e.target.id === "complete-order-btn") {
     renderModal();
+  } else if (e.target.id === "pay-btn") {
+    e.preventDefault();
+    renderAlert();
   }
 });
 
@@ -132,3 +135,21 @@ function renderModal() {
 
   paymentModal.style.display = "block";
 };
+
+function renderAlert() {
+  paymentModal.style.display = "none";
+  
+  const createAlert = document.createElement("div");
+  createAlert.classList.add("alert");
+
+  const getName = document.getElementById("form-name").value;
+
+  createAlert.innerHTML = `
+    <p>Thanks, ${getName}! Your order is on its way!</p>
+  `;
+
+  document.body.appendChild(createAlert);
+
+  orders = [];
+  orderContainer.style.display = "none";
+}
