@@ -2,6 +2,7 @@ import { menuArray } from "./data.js";
 
 const menuContainer = document.querySelector("#menu-container");
 const orderContainer = document.querySelector("#order-container");
+const paymentModal = document.querySelector("#payment-modal");
 
 // RENDER MENU
 
@@ -37,6 +38,8 @@ document.addEventListener("click", (e) => {
   } else if (e.target.classList.contains("remove-btn")) {
     const itemID = Number(e.target.dataset.id);
     removeOrder(itemID);
+  } else if (e.target.id === "complete-order-btn") {
+    renderModal();
   }
 });
 
@@ -99,3 +102,33 @@ function getTotalPrice() {
   const totalPrice = orders.reduce((sum, item) => sum + item.price, 0);
   return totalPrice;
 }
+
+// RENDER PAYMENT MODAL
+
+function renderModal() {
+  paymentModal.innerHTML = "";
+  
+  const createModal = document.createElement("div");
+  createModal.classList.add("modal");
+
+  createModal.innerHTML = `
+    <h2>Enter card details</h2>
+    
+    <form>
+      <label for="form-name">Enter your name:</label>
+      <input type="text" id="form-name" name="full-name" placeholder="Enter your name">
+
+      <label for="form-number">Enter card number:</label>
+      <input type="number" id="form-number" name="number" placeholder="Enter card number">
+
+      <label for="form-cvv">Enter CVV:</label>
+      <input type="number" id="form-cvv" name="cvv" placeholder="Enter CVV">
+
+      <button id="pay-btn">Pay</button>
+    </form>
+  `;
+
+  paymentModal.appendChild(createModal);
+
+  paymentModal.style.display = "block";
+};
