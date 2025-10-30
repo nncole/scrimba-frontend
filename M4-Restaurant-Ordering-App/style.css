@@ -201,9 +201,9 @@ main {
   text-align: right;
 }
 
-/* ORDER BUTTON */
+/* ORDER/PAY BUTTON */
 
-#complete-order-btn {
+#complete-order-btn, #pay-btn {
   width: 100%;
   height: 50px;
 
@@ -221,6 +221,10 @@ main {
 
 #complete-order-btn {
   margin: 40px 0 25px;
+}
+
+#pay-btn {
+  margin-top: 15px;
 }
 
 /* == PAYMENT MODAL == */
@@ -249,4 +253,33 @@ main {
   background-color: white;
   box-shadow: 0 0 90px #8B8B8B;
   text-align: center;
+}
+
+.modal h2 {
+  margin: 20px 0;
+  
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+/* FORM CONTROLS */
+
+form {
+  width: 85%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  display: none;
+}
+
+input {
+  height: 25px;
+  padding: 10px 15px;
+  
+  font-size: 1rem;
 }
